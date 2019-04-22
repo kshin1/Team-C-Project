@@ -3,8 +3,8 @@ pipeline{
 	stages{
 		stage('build'){
 			steps{
-				run 'javac src\SimpleCalculator.java'
-				run 'java -cp . src\SimpleCalculator'
+				run 'javac src\\SimpleCalculator.java'
+				run 'java -cp . src\\SimpleCalculator'
 				}
 		}
 	}	
