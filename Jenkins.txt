@@ -4,7 +4,7 @@ pipeline{
 		stage('build'){
 			steps{
 				bat 'javac src\\SimpleCalculator.java'
-				bat 'java -cp . src\\SimpleCalculator'
+				bat 'java -cp .\\src SimpleCalculator'
 				}
 		}
 	}	
