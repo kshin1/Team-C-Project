@@ -4,7 +4,7 @@ pipeline{
 		stage('build'){
 			steps{
 				sh 'javac src/SimpleCalculator.java'
-				sh 'java src/SimpleCalculator'
+				sh 'java -cp . src/SimpleCalculator'
 				}
 		}
 	}	
